@@ -53,7 +53,7 @@ jobs:
 
 - job: DeleteAWSInfrastructure
   displayName: 'Delete AWS infrastructure'
-  dependsOn: DeleteK8SResources
+  #dependsOn: DeleteK8SResources
   steps:
   - task: TerraformInstaller@1
     displayName: Install terraform
