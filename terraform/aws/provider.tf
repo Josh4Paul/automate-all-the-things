@@ -12,8 +12,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "Dream-tf-state-bucket"          # This value was modified by the initial-setup python script
-    dynamodb_table = "Dream-tf-state-dynamo-db-table" # This value was modified by the initial-setup python script
+    bucket         = "dream-tf-state-bucket"          # This value was modified by the initial-setup python script
+    dynamodb_table = "dream-tf-state-dynamo-db-table" # This value was modified by the initial-setup python script
     key            = "terraform.tfstate"
     region         = "ap-south-1" # This value was modified by the initial-setup python script
     encrypt        = true
